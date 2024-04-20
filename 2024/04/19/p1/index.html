@@ -23,13 +23,13 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="Android 添加下拉菜单快捷方式前言​	安卓的定制化需求有时候都会需要在下拉菜单里添加客户需要的某些自定义快捷开关，记录一下高通平台（sdm660基线）安卓13的添加快捷开关的流程。 修改点​	下拉快捷栏属于SystemUI模块，所以主要的修改都位于framwork&#x2F;base&#x2F;packages&#x2F;SystemUI下 这里是参照原生的Wifi开关添加的。原生效果如图：">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="d:\HclBlog\MyBlog\source_posts\wifi.png">
-<meta property="og:image" content="d:\HclBlog\MyBlog\source_posts\2.png">
+<meta property="og:image" content="http://example.com/_posts/wifi.png">
+<meta property="og:image" content="http://example.com/_posts/2.png">
 <meta property="article:published_time" content="2024-04-19T04:13:34.430Z">
-<meta property="article:modified_time" content="2024-04-20T03:59:31.966Z">
+<meta property="article:modified_time" content="2024-04-20T04:07:09.932Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="d:\HclBlog\MyBlog\source_posts\wifi.png">
+<meta name="twitter:image" content="http://example.com/_posts/wifi.png">
   
   
   
@@ -278,7 +278,8 @@
                 <h1 id="Android-添加下拉菜单快捷方式"><a href="#Android-添加下拉菜单快捷方式" class="headerlink" title="Android 添加下拉菜单快捷方式"></a>Android 添加下拉菜单快捷方式</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>​	安卓的定制化需求有时候都会需要在下拉菜单里添加客户需要的某些自定义快捷开关，记录一下高通平台（sdm660基线）安卓13的添加快捷开关的流程。</p>
 <h2 id="修改点"><a href="#修改点" class="headerlink" title="修改点"></a>修改点</h2><p>​	下拉快捷栏属于SystemUI模块，所以主要的修改都位于framwork&#x2F;base&#x2F;packages&#x2F;SystemUI下</p>
 <p>这里是参照原生的Wifi开关添加的。原生效果如图：</p>
-<p><img src="D:\HclBlog\MyBlog\source_posts\wifi.png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="/_posts/wifi.png" srcset="/img/loading.gif" lazyload alt="/_posts/wifi.png"></p>
+<p>![](D:\HclBlog\MyBlog\source_posts\wifi.png</p>
 <p>本文需要添加一个切换触屏模式的一个快捷开关touchmode</p>
 <ul>
 <li><strong>framework&#x2F;base&#x2F;packages&#x2F;SystemUI&#x2F;src&#x2F;com&#x2F;android&#x2F;systemui&#x2F;statusbar&#x2F;connectivity&#x2F;ConnectivityModule.kt</strong></li>
@@ -302,7 +303,7 @@
 
 <p>在这两处添加touchmode就行了</p>
 <p>最终效果</p>
-<p><img src="D:\HclBlog\MyBlog\source_posts\2.png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="/_posts/2.png" srcset="/img/loading.gif" lazyload></p>
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>以上是安卓添加下拉快捷按钮的基本流程，不同的安卓版本这部分代码可能不一样，但是基本都还是在systemui&#x2F;qs&#x2F;tiles下的，可以根据不同项目的nfc，wifi等按钮，参照写就行了。</p>
 
                 
